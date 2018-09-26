@@ -1,6 +1,5 @@
 ﻿<head>
 <title>не двигайте тубаретками я убью себя самого</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,17 +9,12 @@
 i = 0;
 function auPlay()
 {
-
 min = 1;
 max = 24;
 n = Math.floor(Math.random() * (max - min + 1)) + min;
-
-var audio = new Audio('sounds/' +n + '.mp3');
-
+var audio = new Audio('sounds/' + n + '.mp3');
 audio.play();
-
 i += 1;
-
 document.getElementById("varout").innerHTML = i;
 }
 
