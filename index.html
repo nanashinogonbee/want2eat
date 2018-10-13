@@ -22,7 +22,7 @@ function showImage() {
   imMin = 1;
   imMax = 13;
   imn = Math.floor(Math.random() * (imMax - imMin + 1)) + imMin;
-  let randcg = 'https://github.com/nanashinogonbee/want2eat/raw/master/images/gorin' + imn + '.jpg';
+  let randcg = 'https://github.com/nanashinogonbee/want2eat/raw/master/images/gorin/' + imn + '.jpg';
   let imgStr = '<img src="' + randcg + '" width="400" class="flip" onclick="auPlay()"></img>'
   document.write(imgStr); document.close();
 }
