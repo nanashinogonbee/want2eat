@@ -9,17 +9,26 @@
 i = 0;
 function auPlay()
 {
-min = 1;
-max = 24;
-n = Math.floor(Math.random() * (max - min + 1)) + min;
-var audio = new Audio('sounds/' + n + '.mp3');
+auMin = 1;
+auMax = 27;
+aun = Math.floor(Math.random() * (auMax - auMin + 1)) + auMin;
+let audio = new Audio('sounds/' + aun + '.mp3');
 audio.play();
 i += 1;
 document.getElementById("varout").innerHTML = i;
 }
 
+function showImage() {
+  imMin = 1;
+  imMax = 13;
+  imn = Math.floor(Math.random() * (imMax - imMin + 1)) + imMin;
+  let randcg = 'https://github.com/nanashinogonbee/want2eat/raw/master/images/gorin' + imn + '.jpg';
+  let imgStr = '<img src="' + randcg + '" width="400" class="flip" onclick="auPlay()"></img>'
+  document.write(imgStr); document.close();
+}
+
 </script>
-<h1 class="marqueeX flip"><span><img src="https://github.com/nanashinogonbee/want2eat/raw/master/gorin.jpg" width="400" class="flip" onclick="auPlay()"></img></span></h1>
+<h1 class="marqueeX flip"><span><script>showImage()</script></span></h1>
 <h1 class="marqueeX"><span><div class="textdec"><font face="Comic Sans MS">А Я НЕ ПОНЯЛ ЧТО ВЫ ДЕЛАЕТЕ В МОЁМ ХОЛОДИЛЬНИКЕ</font></div></span></h1>
 <h2><div class="textdec blink_me">Вы хотите кушац?</div></h2>
 <br><br><br><br><br><br>
