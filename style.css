@@ -84,13 +84,6 @@
     animation: scrollY 5s infinite linear;
 }
 
-.marqueeX {
-    display: block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 .flip {
 	-o-transition: transform 3s linear;
 	-ms-transition: transform 3s linear;
